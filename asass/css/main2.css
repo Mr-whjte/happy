@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(200deg, #0093E9 0%, #80D0C7 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.console-container {
+    font-family: 'Signika', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    height: 200px;
+    width: 500px;
+    display: block;
+    position: absolute;
+    color: white;
+    top: -700px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.contten {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -700px;
+}
+
+.box {
+    flex-basis: 30%;
+}
+
+.text-box {
+    margin-right: 130px;
+    font-size: 16px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    text-align: center;
+}
+
+
+/* hover */
+
+.choose {
+    position: relative;
+    margin-left: 100px;
+    width: 150px;
+    height: 100px;
+}
+
+.choose:hover .noti {
+    cursor: pointer;
+    display: block;
+}
+
+.choose:hover .noti_1 {
+    cursor: pointer;
+    display: block;
+}
+
+.noti {
+    margin-top: -300px;
+    margin-left: 350px;
+    width: 250px;
+    height: 200px;
+    background-color: #585661;
+    opacity: 0.7;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+    animation: oke 0.5s ease-in;
+}
+
+.noti_1 {
+    margin-top: -300px;
+    margin-left: -210px;
+    width: 250px;
+    height: 200px;
+    opacity: 0.7;
+    background-color: #585661;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+    animation: oke 0.3s ease-in;
+}
+
+.noti__box1 {
+    margin: 10px 10px;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.test_box_3 {
+    margin: 10px 10px;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/* btn */
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    margin-top: 300px;
+    margin-left: 150px;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+
+/*  */
+
+button.learn-more {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    background: #fff0f0;
+    border: 2px solid #b18597;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.learn-more::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9c4d2;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #85b18c, 0 0.625em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.learn-more:hover {
+    background: #ffe3e2;
+    transform: translate(0, 0.25em);
+}
+
+button.learn-more:hover::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.learn-more:active {
+    background: #ffe9e9;
+    transform: translate(0em, 0.75em);
+}
+
+button.learn-more:active::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    transform: translate3d(0, 0, -1em);
+}
+
+
+/* thông báo nhận quà */
+
+.input {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.father {
+    position: absolute;
+    top: 150px;
+    left: 60vh;
+}
+
+.abc {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    display: none;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.gift_one {
+    background-image: url("/asass/img/momo.png");
+}
+
+.gift_two {
+    background-image: url("/asass/img/food.png");
+}
+
+.gift_there {
+    background-image: url("/asass/img/nit.png");
+}
+
+
+/* text effcet */
